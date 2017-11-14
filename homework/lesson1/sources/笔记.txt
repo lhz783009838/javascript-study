@@ -1,0 +1,7 @@
+1. V8引擎 ：对代码进行预处理和执行
+2. javaScript 是解析性语言 -> 边编译边解析
+   编译性语言 -> 先编译，再解析 如 c java
+   
+3.浏览器启动时实际就是启动运行环境
+
+小技巧: Chrome -> sources -> Snippets -> new snippets 可以直接编写js
