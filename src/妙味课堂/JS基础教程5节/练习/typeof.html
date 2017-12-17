@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <script type="text/javascript">
+        var a = 3;
+        //console.log(typeof(a));  // number
+        a = "hehe";
+        //console.log(typeof(a)); // string
+        a = function () {
+
+        };
+        //console.log(typeof(a)); // function
+        a = true;
+        //console.log(typeof(a)); // boolean
+        /**
+         window.onload = function (ev) {
+            var a = document.getElementById('div1');
+            console.log(typeof(a)) // object
+        }
+         */
+        var b; // 没有定义变量 或 定义的变量没有赋值，就是undefined类型
+        console.log(typeof(b)); // undefined
+    </script>
+</head>
+
+<body>
+<div id="div1">sdf</div>
+</body>
+</html>
