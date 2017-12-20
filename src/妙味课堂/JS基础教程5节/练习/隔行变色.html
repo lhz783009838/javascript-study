@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function (ev) {
+            var oUl = document.getElementById('ul1');
+            var oLi = oUl.getElementsByTagName('li');
+            for (var i = 0; i < oLi.length; i++) {
+                if (i % 2 == 0) {
+                    oLi[i].style.background = '#CCC'
+                }
+            }
+        }
+
+        // 疑惑
+        // oUl.getElementsByTagName('li'); 只能在函数中使用
+        // var oUl = document.getElementById('ul1'); 可以在函数外使用
+    </script>
+</head>
+<body>
+<div>
+    <ul id="ul1">
+        <li>ssss</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+</body>
+</html>

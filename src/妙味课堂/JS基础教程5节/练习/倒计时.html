@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function (ev) {
+            var oTotal = 10;
+            var oTime = document.getElementById('time');
+            var countdown = function () {
+                oTime.innerText = parseInt(oTotal / 60) + '分:' + oTotal % 60 + '秒';
+                oTotal-=1;
+            };
+            setInterval(function () {
+                if(oTotal >= 0){
+                    countdown();
+                }
+            },1000)
+
+        }
+    // 注意点 setTimeout 方法失效，替换setInerval 有效，查明原因
+    </script>
+</head>
+<body>
+<div> 倒计时 <label id="time"></label></div>
+</body>
+</html>
