@@ -31,3 +31,12 @@ js基础三	38:18
 9. 什么是真？什么是假？
 10. json、for in
 11. 课程总结
+
+js基础四	36:06
+1. 函数返回值：return，没有return的函数返回值是什么？
+2. 函数传参、arguments（可变参、不定参）
+3. arguments应用实例：任意数字求和
+4. 实例：CSS函数
+5. 获取非行间样式：currentStyle、getComputedStyle(obj, false)[attr]
+6. 封装可重用的getStyle()函数
+7. 函数传参的可读性

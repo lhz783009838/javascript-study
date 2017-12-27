@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: red
+        }
+    </style>
+
+    <script>
+        // 获取样式的方法
+        function getStyle(obj, attr) {
+            if (obj.currentStyle) {
+                return obj.currentStyle[attr];
+            } else {
+                return getComputedStyle(obj, false)[attr];
+            }
+
+        }
+
+        // 根据参数个数做不同操作
+        // 2个参数位获取样式 3个参数位修改样式
+        function css(obj, attr, value) {
+            // 获取样式
+            if (arguments.length === 2) {
+                alert(getStyle(obj, attr))
+            } else if (arguments.length === 3) {
+                obj.style[attr] = value;
+            }
+        }
+
+        window.onload = function () {
+            var oBtn = document.getElementById('btn');
+            var oDiv = document.getElementById('div1');
+
+            oBtn.onclick = function () {
+                css(oDiv, 'background', 'green');
+                //css(oDiv, 'width')
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="样式" id="btn">
+<div id="div1"></div>
+</body>
+</html>
