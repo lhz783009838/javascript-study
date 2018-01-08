@@ -40,3 +40,11 @@ js基础四	36:06
 5. 获取非行间样式：currentStyle、getComputedStyle(obj, false)[attr]
 6. 封装可重用的getStyle()函数
 7. 函数传参的可读性
+
+js基础五	27:58
+1. 数组定义、length使用
+2. push、pop、shift、unshift方法
+3. 排序：sort方法、字符串排序、数字排序
+4. cancat、join方法
+5. split方法
+6. splice方法：删除、插入、替换

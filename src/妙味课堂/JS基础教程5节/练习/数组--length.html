@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // array.length length长度属性，不是方法，不需要()
+    var arr = [1, 2, 4, '5'];
+    alert(arr.length);
+    // 可以定义数组的长度，但是因为没有对应的值，所有剩余位数对应的值位undefined
+    console.log(arr);
+    arr.length = 10;
+    alert(arr);
+    alert(arr[6]);
+</script>
+</body>
+</html>
