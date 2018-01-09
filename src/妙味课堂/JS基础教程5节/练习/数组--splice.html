@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr1 = [1, 2, 3, 4, 5, 6, 7];
+    var arr2 = [1, 2, 3, 4, 5, 6, 7];
+    var arr3 = [1, 2, 3, 4, 5, 6, 7];
+
+    // 两个参数，从第二位下标开始删除，删除5位
+    arr1.splice(2, 5);
+    alert(arr1);
+
+    // 三个以上参数，从第五位开始，删除后0位，并插入'a','b','c'，即插入
+    arr2.splice(5, 0, 'a', 'b', 'c');
+    alert(arr2);
+
+    // 从第五位开始，替换两位
+    arr3.splice(5, 2, 'a', 'b');
+    alert(arr3);
+</script>
+</body>
+</html>
