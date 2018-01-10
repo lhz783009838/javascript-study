@@ -48,3 +48,11 @@ js基础五	27:58
 4. cancat、join方法
 5. split方法
 6. splice方法：删除、插入、替换
+
+DOM中级	26:01
+1. 创建元素 createElement、appendChild
+2. 添加元素的性能差异
+3. insertBefore方法及实例
+4. 删除元素：removeChild方法
+5. 文档碎片：document.createDocumentFragment()
+6. 性能测试方法
